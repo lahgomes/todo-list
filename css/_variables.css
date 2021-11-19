@@ -1,0 +1,11 @@
+:root {
+  --primary-font: "Hind Siliguri";
+  --text: 1.125rem;
+  --title: 1.75rem;
+  --light: 300;
+  --medium: 400;
+  --bold: 700;
+  --salmon:#FF6666;
+  --white: #fff;
+  --light-green: #09EDDE;
+}
