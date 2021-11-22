@@ -4,8 +4,11 @@ body {
   height: 100vh;
   justify-content: center;
   width: 100%;
+  background: url(/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
 }
-
 
 .list {
   background-color: var(--salmon);
@@ -14,6 +17,12 @@ body {
   padding: 0.938rem;
   width: 20rem;
 } 
+
+@media (min-width: 768px) {
+  .list {
+    width: 30rem;
+  }
+}
 
 .list__title {
   font-size: var(--title);
@@ -25,13 +34,13 @@ body {
 }
 
 .list__checkbox {
-  accent-color: var(--light-green);
+  accent-color: var(--light-purple);
 }
 
 .list__form {
-  margin-top: 1.25rem;
   display: flex;
   gap: 0.313rem;
+  margin-top: 1.25rem;
 }
 
 .list__input {
@@ -41,28 +50,33 @@ body {
 }
 
 .list__button {
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: var(--white);
   border: none;
   color: var(--salmon);
   cursor: pointer;
+  display: flex;
   font-family: var(--primary-font);
   font-size: var(--text-botton);
   font-weight: var(--bold);
   height: 2.188rem;
+  justify-content: center;
   padding: 0.313rem;
   text-transform: uppercase;
+  transition: 0.3s;
   width: 2.75rem;
 }
 
 .list__items {
   background-color: #b458586f;
   border: 0.5px solid white;
-  padding: 10px;
-  margin: 10px 0;
   font-size: var(--text);
+  margin: 10px 0;
+  padding: 10px;
 }
 
+.list__button:hover {
+  background-color: var(--light-purple);
+  color: var(--white);
+}
 
