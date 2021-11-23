@@ -1,18 +1,19 @@
 body {
   align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background: url(/img/background.png);
   display: flex;
   height: 100vh;
   justify-content: center;
   width: 100%;
-  background: url(/img/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:  cover;
 }
 
 .list {
   background-color: var(--salmon);
   border-radius: 0.313rem;
+  box-shadow: 5px 5px 8px rgb(105, 105, 105);
   color: var(--white); 
   padding: 0.938rem;
   width: 20rem;
@@ -28,6 +29,33 @@ body {
   font-size: var(--title);
 }
 
+.presentation {
+  align-items: center;
+  background-color: var(--salmon);
+  border-radius: 0.313rem;
+  box-shadow: 5px 5px 8px rgb(105, 105, 105);
+  color: var(--white); 
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.938rem;
+}
+
+.presentation__welcome {
+  font-size: var(--text-presentation);
+}
+
+.presentation__text {
+  font-size: var(--text);
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .presentation__welcome {
+    font-size: var(--title);
+  }
+}
+
 .list__item {
   font-size: var(--text);
   margin-top: 1.25rem;
@@ -35,6 +63,7 @@ body {
 
 .list__checkbox {
   accent-color: var(--light-purple);
+  cursor: pointer;
 }
 
 .list__form {
@@ -45,8 +74,8 @@ body {
 
 .list__input {
   border: none;
-  padding: 0.625rem;
   flex: 2;
+  padding: 0.625rem;
 }
 
 .list__button {
@@ -67,12 +96,24 @@ body {
   width: 2.75rem;
 }
 
+/* .list__items {
+  background-color: #b458586f;
+  border: 0.5px solid white;
+  font-size: var(--text);
+  margin: 10px 0;
+  padding: 10px;
+} */
+
 .list__items {
   background-color: #b458586f;
   border: 0.5px solid white;
   font-size: var(--text);
   margin: 10px 0;
   padding: 10px;
+/* 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; */
 }
 
 .list__button:hover {
