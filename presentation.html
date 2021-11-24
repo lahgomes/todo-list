@@ -16,7 +16,7 @@
 
 <body>
   <main class="main">
-    <div class="presentation" data-presentation>
+    <div class="presentation hidden" data-presentation>
       <h1 class="presentation__welcome">
         Welcome to your Todo List!
       </h1>
@@ -26,19 +26,19 @@
       </button>
       </form>
     </div>
-    <div class="list hidden" data-list>
+    <div class="list" data-todolist>
       <h1 class="list__title">
         Todo List
       </h1>
-      <ul class="list__item">
-        <li class="list__items">
+      <ul class="list__items" data-list>
+        <!-- <li class="list__item">
           <input class="list__checkbox" type="checkbox" id="check01">
           <label for="check01">Item 1</label>
-        </li>
+        </li> -->
       </ul>
       <form class="list__form">
-        <input class="list__input" type="text" placeholder="Add your new item here">
-        <button type="button" class="list__button" data-button>
+        <input class="list__input" type="text" placeholder="Add your new item here" data-input>
+        <button type="button" class="list__button" data-add>
           <i class="fas fa-plus"></i>
         </button>
       </form>

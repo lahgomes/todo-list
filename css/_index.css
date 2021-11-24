@@ -60,7 +60,7 @@ body {
   }
 }
 
-.list__item {
+.list__items {
   font-size: var(--text);
   margin-top: 1.25rem;
 }
@@ -108,7 +108,7 @@ body {
   padding: 10px;
 } */
 
-.list__items {
+.list__item {
   background-color: #b458586f;
   border: 0.5px solid white;
   font-size: var(--text);
