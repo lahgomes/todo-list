@@ -2,8 +2,9 @@ const addNewItem = (list, value) => {
   const item = document.createElement('li')
   item.classList.add('list__item')
   item.innerHTML = `
-  <input class="list__checkbox" type="checkbox" id="check01">
-  <label for="check01">${value}</label>
+  <input class="list__checkbox" type="checkbox" id="${value}">
+  <label for="${value}">${value}</label>
+  <button type="button" data-delete="${value}" class="list__delete" data-delete><i class="far fa-trash-alt"></i></button>
   `
   list.append(item)
 }
@@ -11,11 +12,12 @@ const addNewItem = (list, value) => {
 const todoList = () => {
   const addButton = document.querySelector('[data-add]');
   const list = document.querySelector('[data-list]');
-  const input  = document.querySelector('[data-input]');
+  const input  = document.querySelector('[data-input]');  
+
   addButton.addEventListener('click', (event) => {
     addNewItem(list, input.value)
+    input.value = ''
   })  
-  
 }
 
 const startApplication = () => {
