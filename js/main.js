@@ -11,13 +11,14 @@ const addNewItem = (list, value) => {
 }
 
 const removeItem = () => {
-  const deleteButtons = document.querySelectorAll('[data-delete]')
-  
-    deleteButtons.addEventListener('click', (event) => {
-      const li = event.target('.list__item')
-      li.remove()
+  const deleteButtons = document.querySelectorAll('[data-delete]')  
+    
+  deleteButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+    const li = event.target.closest('.list__item')
+    li.remove()    
     })    
-  
+  })    
 }
 
 const todoList = () => {
