@@ -7,6 +7,17 @@ const addNewItem = (list, value) => {
   <button type="button" data-delete="${value}" class="list__delete" data-delete><i class="far fa-trash-alt"></i></button>
   `
   list.append(item)
+  removeItem()  
+}
+
+const removeItem = () => {
+  const deleteButtons = document.querySelectorAll('[data-delete]')
+  
+    deleteButtons.addEventListener('click', (event) => {
+      const li = event.target('.list__item')
+      li.remove()
+    })    
+  
 }
 
 const todoList = () => {
