@@ -165,3 +165,7 @@ body {
 .list__delete:hover {
   color: var(--light-purple);  
 }
+
+.list__messageError {
+  padding-top: 0.5rem;
+}
