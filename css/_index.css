@@ -91,6 +91,12 @@ body {
   cursor: pointer;
 }
 
+.list__checkbox:checked ~ label {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--light-purple);
+}
+
 .list__form {
   display: flex;
   gap: 0.313rem;
@@ -123,14 +129,6 @@ body {
   width: 2.75rem;
 }
 
-/* .list__items {
-  background-color: #b458586f;
-  border: 0.5px solid white;
-  font-size: var(--text);
-  margin: 10px 0;
-  padding: 10px;
-} */
-
 .list__item {
   background-color: #b458586f;
   border: 0.5px solid white;
@@ -138,6 +136,10 @@ body {
   margin: 10px 0;
   padding: 10px;
   position: relative;  
+}
+
+.list__item label {
+  cursor: pointer;
 }
 
 .list__button:hover {
